@@ -49,13 +49,11 @@
   margin: 7px 0;
 
   &:after {
-    background: url(../img/link-arrow-red.png) center no-repeat;
+    @include sprite($-link-arrow-red);
     content: '';
     display: inline-block;
-    height: 9px;
     margin: 0 10px;
     vertical-align: middle;
-    width: 12px;
   }
 }
 

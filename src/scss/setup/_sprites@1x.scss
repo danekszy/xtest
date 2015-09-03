@@ -1,3 +1,12 @@
+$-adv-banner: 0px 0px 0px 0px 241px 66px 241px 124px '../../../dist/img/common/sprites@1x.png';
+$-btn-gallery-arrow-left: 205px 92px -205px -92px 6px 10px 241px 124px '../../../dist/img/common/sprites@1x.png';
+$-btn-gallery-arrow-right: 213px 92px -213px -92px 6px 10px 241px 124px '../../../dist/img/common/sprites@1x.png';
+$-ico-social-fb: 181px 68px -181px -68px 22px 22px 241px 124px '../../../dist/img/common/sprites@1x.png';
+$-ico-social-gplus: 205px 68px -205px -68px 22px 22px 241px 124px '../../../dist/img/common/sprites@1x.png';
+$-ico-social-twt: 181px 92px -181px -92px 22px 22px 241px 124px '../../../dist/img/common/sprites@1x.png';
+$-link-arrow-red: 229px 68px -229px -68px 12px 9px 241px 124px '../../../dist/img/common/sprites@1x.png';
+$-link-arrow: 229px 79px -229px -79px 12px 9px 241px 124px '../../../dist/img/common/sprites@1x.png';
+$-logo: 0px 68px 0px -68px 179px 56px 241px 124px '../../../dist/img/common/sprites@1x.png';
 
 @mixin sprite-width($sprite) {
   width: nth($sprite, 5);
