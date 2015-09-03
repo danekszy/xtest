@@ -1,7 +1,7 @@
 /* ==========================================================================
 
     Project: xtest
-    Author: 
+    Author: Daniel Szymanek
     Last updated: @@timestamp
 
    ========================================================================== */
@@ -16,22 +16,44 @@
      * Init Function
      */
     init: function() {
-      // App.feature1();
-      // App.feature2();
+      App.gallerySlideshow.init();
     },
 
     /**
-     * Custom feature 1
+     * 2 second, primitive gallery slideshow
      */
-    feature1: function() {
+    gallerySlideshow: {
+      photoCount: 0,
+      currentPhoto: 1,
 
-    },
+      init: function() {
+        var photos = $(".gallery-thumb");
+        this.photoCount = photos.length;
 
-    /**
-     * Custom feature 2
-     */
-    feature2: function() {
+        //Start colorbox
+        photos.colorbox({rel:'gallery-thumb', open: true});
 
+        //Bind to listen for slide changes
+        $(document).bind('cbox_complete', this.handleSlideChange);
+      },
+
+      handleSlideChange: function () {
+        if (App.gallerySlideshow.currentPhoto < App.gallerySlideshow.photoCount)
+          App.gallerySlideshow.scheduleNext();
+        else
+          App.gallerySlideshow.scheduleClose();
+      },
+
+      scheduleNext: function () {
+        setTimeout(function () {
+            App.gallerySlideshow.currentPhoto++;
+            $.colorbox.next();
+          }, 2000);
+      },
+
+      scheduleClose: function () {
+        setTimeout($.colorbox.close, 2000);
+      }
     }
 
   };
