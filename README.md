@@ -1,7 +1,15 @@
 xtest
 ==================
 
-xtest is a Front-end project created with [XH Generator](https://github.com/xhtmlized/generator-xh), a [Yeoman](http://yeoman.io) generator for scaffolding web projects.
+xtest is a Front-end assignment project coded while I was taking part in a recruitment process.
+
+## Development process notes
+- CSS3 Pie not yet implemented
+- Had to modify grunt task to accomodate package update (PR to be expected)
+- Used image for intro header, since project scope is really narrow (bigger tasks would be better off with webfont)
+- Allowed myself to go with dashed border instead of dotted separators (better performance, while not significantly different from design)
+- Removed Modernizr from build since there's not much we can progressively enhance given the task and the scope of the project (no need for img fallbacks in this browser support reqs.)
+- Code probably could be organized better and make better use of helpers, since it was hard for me to make good, informed decisions with such a small task
 
 ## Table of contents
 
