@@ -47,17 +47,17 @@
   a {
     display: block;
     height: 55px;
-    width: 40px;
     position: relative;
+    width: 40px;
 
     &:before {
+      @include sprite($-btn-gallery-arrow-left);
       content: '';
       display: block;
-      position: absolute;
-      @include sprite($-btn-gallery-arrow-left);
-      margin: -5px -3px;
-      top: 50%;
       left: 50%;
+      margin: -5px -3px;
+      position: absolute;
+      top: 50%;
     }
   }
 }
