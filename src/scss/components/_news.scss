@@ -1,0 +1,32 @@
+.section-news {
+  @extend %white-box;
+
+  .section-header {
+    padding: 17px 20px;
+  }
+}
+
+.news-articles {
+  padding: 10px 20px;
+}
+
+.news-article {
+
+}
+
+.news-header {
+
+}
+
+.news-image {
+  float: left;
+}
+
+.news-intro {
+
+}
+
+.section-column-news {
+  width: 50%;
+  float: left;
+}

@@ -9,7 +9,7 @@ html {
   *,
   *:before,
   *:after {
-    box-sizing: inherit;
+    box-sizing: border-box;
   }
 }
 
@@ -17,14 +17,16 @@ body {
   font-family: $font-arial;
   font-size: $font-size;
   line-height: $font-line-height;
+  background-color: #eae2d7;
+  background-image: linear-gradient(to bottom, #d2c0a8, #eae2d7 150px);
 }
 
 a {
-  color: $color-red;
+  color: $color-brand;
   text-decoration: none;
 
   &:hover {
-    color: $color-red;
+    color: $color-brand;
     text-decoration: underline;
   }
 }

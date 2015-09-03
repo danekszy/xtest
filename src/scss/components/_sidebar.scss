@@ -1,0 +1,45 @@
+/* Sidebar */
+.sidebar {
+  width: 33.33%;
+  float: left;
+  padding-left: 20px;
+}
+
+.sidebar-random-links {
+  @extend %no-bullets;
+}
+
+.sidebar-random-link {
+
+}
+
+
+.sidebar-address {
+
+}
+
+.section-sidebar {
+  @extend %white-box;
+  margin-bottom: 20px;
+}
+
+.social-buttons {
+  @extend %no-bullets;
+
+  li {
+
+  }
+}
+
+.social-buttons-link--fb {
+
+}
+
+.social-buttons-link--twt {
+
+}
+
+.social-buttons-link--gplus {
+
+}
+

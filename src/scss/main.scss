@@ -1,7 +1,7 @@
 /* =========================================================================
 
     Project: xtest
-    Author: 
+    Author:
     Last updated: @@timestamp
 @@toc
 
@@ -21,5 +21,11 @@
 @import "common/base";
 @import "common/utilities";
 @import "common/layout";
+@import "common/header";
+@import "common/footer";
 
 // Components
+@import "components/gallery";
+@import "components/intro";
+@import "components/news";
+@import "components/sidebar";

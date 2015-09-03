@@ -10,3 +10,20 @@
     clear: both;
   }
 }
+
+%no-bullets {
+  padding: 0;
+  list-style-type: none;
+}
+
+%white-box {
+  border-radius: 10px;
+  background-color: #fff;
+  overflow: hidden;
+  box-shadow: 2px 2px rgba(#000, .05);
+}
+
+%brand-gradient {
+  background-color: $color-brand;
+  background-image: linear-gradient(to top, $color-brand 50%, $color-brand-gradient);
+}
