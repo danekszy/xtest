@@ -38,10 +38,11 @@
       },
 
       handleSlideChange: function () {
-        if (App.gallerySlideshow.currentPhoto < App.gallerySlideshow.photoCount)
+        if (App.gallerySlideshow.currentPhoto < App.gallerySlideshow.photoCount) {
           App.gallerySlideshow.scheduleNext();
-        else
+        } else {
           App.gallerySlideshow.scheduleClose();
+        }
       },
 
       scheduleNext: function () {
