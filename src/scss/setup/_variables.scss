@@ -7,6 +7,17 @@ $color-brand: #e61052;
 $color-brand-gradient: #fb2e6d;
 $section-separator-border-color: #d9cbb6;
 $body-text-color: #97866f;
+$body-bg-color: #eae2d7;
+$body-bg-shade: #d2c0a8;
+$footer-bg-color: #c9bba9;
+$footer-copy-color: #77644b;
+$footer-border-color: #bfb1a0;
+$gallery-bg-color: $footer-bg-color;
+$news-image-border-color: #eae1d4;
+$news-header-color: #2a1f0f;
+$intro-text-color: #6e5e46;
+$header-nav-separator-color: #f58bab;
+
 
 // Container definitions
 $container-width: 960px !default;
@@ -14,6 +25,7 @@ $container-padding: 20px !default;
 
 // Z-indexes
 $zindex-base: 1 !default;
+$zindex-illustration: -1;
 
 // Font definitions
 $font-arial: "Arial", "Helvetica Neue", Helvetica, serif !default;

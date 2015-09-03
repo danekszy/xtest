@@ -56,7 +56,7 @@
     color: #fff;
     padding: 20px 0;
     display: block;
-    border-left:1px dashed #f58bab;
+    border-left:1px dashed $header-nav-separator-color;
     margin-left: -1px;
 
     &:hover,
@@ -80,11 +80,11 @@
 .header-search-input {
   @extend %appearance-none;
   @extend %brand-border-radius;
-  color: #97866f;
+  color: $body-text-color;
   line-height: 19px;
   padding: 7px 11px 3px;
   border: 0;
-  box-shadow: inset 1px 1px rgba(0,0,0,.23);
+  box-shadow: inset 1px 1px rgba(#000, .23);
   width: 215px;
   float: left;
   margin-right: 10px;
@@ -101,7 +101,7 @@
   padding: 6px 14px 4px;
   border: 0;
   float: left;
-  box-shadow: 1px 1px rgba(0,0,0,.15);
+  box-shadow: 1px 1px rgba(#000, .15);
 
   &:hover,
   &:focus {

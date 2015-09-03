@@ -20,7 +20,7 @@
   margin: 12px 0 10px;
 
   a {
-    color: #2a1f0f;
+    color: $news-header-color;
   }
 }
 
@@ -28,7 +28,7 @@
   float: left;
   padding: 2px;
   background-color: #fff;
-  border: 1px solid #eae1d4;
+  border: 1px solid $news-image-border-color;
   margin: 4px 20px 0 0;
 
   img {

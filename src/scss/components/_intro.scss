@@ -13,7 +13,7 @@
 }
 
 .intro-text {
-  color: #6e5e46;
+  color: $intro-text-color;
   line-height: 18px;
   padding-right: 6px;
   width: 50%;
@@ -34,5 +34,5 @@
   position: absolute;
   right: -82px;
   bottom: 0;
-  z-index: -1;
+  z-index: $zindex-illustration;
 }
