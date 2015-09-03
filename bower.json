@@ -14,5 +14,7 @@
     "normalize.css": "^3.0.3",
     "jquery": "^1.11.2"
   },
-  "devDependencies": {}
+  "devDependencies": {
+    "jquery-colorbox": "~1.6.3"
+  }
 }
