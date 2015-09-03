@@ -4,10 +4,11 @@
 }
 
 .header-logo {
-  width: 200px;
-  height: 50px;
-  background: url(../img/common/logo.png) no-repeat;
+  width: 179px;
+  height: 56px;
+  background: url(../img/logo.png) no-repeat;
   float: left;
+  margin: 41px 20px;
 
   h1 {
     @extend .ir;
@@ -18,11 +19,13 @@
 
 /* Navigation */
 .header-nav {
+  clear: both;
 
   ul {
+    @extend %css3pie;
     @extend %no-bullets;
+    @extend %brand-border-radius;
     margin: 0;
-    border-radius: 10px;
     overflow: hidden;
     width: 100%;
     box-shadow: 2px 2px rgba(0,0,0,.15);
@@ -30,17 +33,22 @@
 }
 
 .header-banner {
-
+  @extend .ir;
+  background: url(../img/adv-banner.png) no-repeat;
+  width: 241px;
+  height: 66px;
+  float: left;
+  margin: 36px 0 36px 142px;
 }
 
 .header-nav-link {
   @extend %brand-gradient;
+  @extend %brand-gradient-text;
   text-align: center;
   text-transform: uppercase;
   font-size: 12px;
   font-weight: bold;
   -webkit-font-smoothing: antialiased;
-  text-shadow: -1px -1px rgba(0,0,0,.2);
   float: left;
   width: 1/ 6 * 100%;
 
@@ -48,8 +56,11 @@
     color: #fff;
     padding: 20px 0;
     display: block;
+    border-left:1px dashed #f58bab;
+    margin-left: -1px;
 
-    &:hover {
+    &:hover,
+    &:focus {
       background-color: rgba(#000, .2);
       text-decoration: none;
     }
@@ -61,13 +72,39 @@
 }
 
 .header-search {
-
+  float: right;
+  font-size: 12px;
+  margin-top: 54px;
 }
 
 .header-search-input {
-
+  @extend %appearance-none;
+  @extend %brand-border-radius;
+  color: #97866f;
+  line-height: 19px;
+  padding: 7px 11px 3px;
+  border: 0;
+  box-shadow: inset 1px 1px rgba(0,0,0,.23);
+  width: 215px;
+  float: left;
+  margin-right: 10px;
 }
 
 .header-search-submit {
+  @extend %appearance-none;
+  @extend %brand-gradient;
+  @extend %brand-gradient-text;
+  @extend %brand-border-radius;
+  line-height: 19px;
+  text-transform: uppercase;
+  font-size: 11px;
+  padding: 6px 14px 4px;
+  border: 0;
+  float: left;
+  box-shadow: 1px 1px rgba(0,0,0,.15);
 
+  &:hover,
+  &:focus {
+    @extend %brand-gradient-hover;
+  }
 }

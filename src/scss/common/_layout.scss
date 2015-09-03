@@ -32,8 +32,9 @@
 
 .section-header--red {
   @extend %brand-gradient;
+  @extend %brand-gradient-text;
   color: #fff;
-  text-shadow: -1px -1px rgba(#000, .2);
+  font-size: 12px;
   border-bottom: 2px solid #e5e5e5;
 }
 

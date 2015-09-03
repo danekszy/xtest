@@ -11,12 +11,17 @@
   }
 }
 
+%css3pie {
+  behavior: url(js/PIE.htc);
+}
+
 %no-bullets {
   padding: 0;
   list-style-type: none;
 }
 
 %white-box {
+  @extend %css3pie;
   border-radius: 10px;
   background-color: #fff;
   overflow: hidden;
@@ -24,6 +29,28 @@
 }
 
 %brand-gradient {
+  @extend %css3pie;
   background-color: $color-brand;
   background-image: linear-gradient(to top, $color-brand 50%, $color-brand-gradient);
+}
+
+%brand-gradient-hover {
+  @extend %css3pie;
+  background-color: darken($color-brand, 10%);
+  background-image: linear-gradient(to top, darken($color-brand, 10%) 50%, darken($color-brand-gradient, 10%));
+}
+
+%brand-gradient-text {
+  color: #fff;
+  text-shadow: -1px -1px rgba(#000, .2);
+}
+
+%brand-border-radius {
+  @extend %css3pie;
+  border-radius: 10px;
+}
+
+%appearance-none {
+  -webkit-appearance: none;
+  -moz-appearance: none;
 }

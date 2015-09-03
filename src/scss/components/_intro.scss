@@ -1,11 +1,38 @@
 .section-intro {
+  padding: 17px 20px;
+  position: relative;
+  min-height: 415px;
+  margin: -8px 0 -12px;
+}
 
+.intro-header {
+  @extend .ir;
+  background:transparent url('../img/txt-intro-header.jpg') left top no-repeat;
+  width: 300px;
+  height: 94px;
 }
 
 .intro-text {
+  color: #6e5e46;
+  line-height: 18px;
+  padding-right: 6px;
+  width: 50%;
 
+  strong {
+    color: $color-brand;
+    letter-spacing: .04em;
+    display: block;
+    padding: 20px 0 5px;
+  }
 }
 
 .intro-illustration {
-
+  @extend .ir;
+  background:transparent url('../img/misc-illustration.jpg') left top no-repeat;
+  width: 566px;
+  height: 415px;
+  position: absolute;
+  right: -82px;
+  bottom: 0;
+  z-index: -1;
 }

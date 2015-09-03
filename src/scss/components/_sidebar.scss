@@ -7,15 +7,35 @@
 
 .sidebar-random-links {
   @extend %no-bullets;
+  padding: 0 20px;
 }
 
 .sidebar-random-link {
+  line-height: 30px;
 
+  a {
+    color: $body-text-color;
+  }
+
+  &:before {
+    content: '';
+    display: inline-block;
+    background: url(../img/link-arrow.png) center no-repeat;
+    width: 12px;
+    height: 9px;
+    margin-right: 12px;
+    vertical-align: middle;
+  }
 }
 
 
 .sidebar-address {
+  line-height: 20px;
+  padding: 0 20px;
 
+  strong {
+    display: block;
+  }
 }
 
 .section-sidebar {
@@ -25,21 +45,40 @@
 
 .social-buttons {
   @extend %no-bullets;
+  @extend %clearfix;
+  line-height: 30px;
+  padding: 0 10px;
 
   li {
+    float: left;
+  }
 
+  a {
+    color: $body-text-color;
+    margin: 4px 9px;
+    display: block;
+
+    &:before {
+      content: '';
+      display: inline-block;
+      background: transparent center no-repeat;
+      width: 22px;
+      height: 22px;
+      margin-right: 7px;
+      vertical-align: middle;
+    }
   }
 }
 
-.social-buttons-link--fb {
-
+.social-buttons-link--fb a:before {
+  background-image: url(../img/ico-social-fb.png);
 }
 
-.social-buttons-link--twt {
-
+.social-buttons-link--twt a:before {
+  background-image: url(../img/ico-social-twt.png);
 }
 
-.social-buttons-link--gplus {
-
+.social-buttons-link--gplus a:before {
+  background-image: url(../img/ico-social-gplus.png);
 }
 
