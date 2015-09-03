@@ -6,9 +6,9 @@
   @extend %clearfix;
   @extend %brand-border-radius;
   background-color: #c9bba9;
+  margin: 0 20px;
   overflow: hidden;
   padding: 10px 29px;
-  margin: 0 20px;
 }
 
 .gallery-items {
@@ -22,29 +22,22 @@
 
 .gallery-thumb {
    @extend %brand-border-radius;
-  overflow: hidden;
   display: block;
-  width: 160px;
   height: 130px;
   margin: 10px;
+  overflow: hidden;
+  width: 160px;
 }
 
-.gallery-thumb img {
-
-}
-
-.gallery-nav {
-
-}
 
 .gallery-nav-btn {
   @extend %brand-gradient;
   @extend %brand-border-radius;
   @extend %no-bullets;
   @extend .ir;
+  margin-top: -27px;
   position: absolute;
   top: 50%;
-  margin-top: -27px;
 
   &:hover a,
   &:focus a {
@@ -52,10 +45,10 @@
   }
 
   a {
-    width: 40px;
-    height: 55px;
-    display: block;
     background: url('../img/btn-gallery-arrow-left.png') center no-repeat;
+    display: block;
+    height: 55px;
+    width: 40px;
   }
 }
 

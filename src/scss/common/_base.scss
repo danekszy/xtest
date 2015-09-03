@@ -3,8 +3,8 @@
 //------------------------------------------------------------------------------
 
 html {
-  font-size: 62.5%;
   box-sizing: border-box;
+  font-size: 62.5%;
 
   *,
   *:before,
@@ -14,12 +14,12 @@ html {
 }
 
 body {
+  background-color: $body-bg-color;
+  background-image: linear-gradient(to bottom, $body-bg-shade, $body-bg-color 150px);
   color: $body-text-color;
   font-family: $font-arial;
   font-size: $font-size;
   line-height: $font-line-height;
-  background-color: $body-bg-color;
-  background-image: linear-gradient(to bottom, $body-bg-shade, $body-bg-color 150px);
 }
 
 a {

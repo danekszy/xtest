@@ -25,11 +25,11 @@
 }
 
 .news-image {
-  float: left;
-  padding: 2px;
   background-color: #fff;
   border: 1px solid $news-image-border-color;
+  float: left;
   margin: 4px 20px 0 0;
+  padding: 2px;
 
   img {
     display: block;
@@ -37,29 +37,29 @@
 }
 
 .news-intro {
-  line-height: 20px;
   float: left;
-  width: 158px;
+  line-height: 20px;
   margin: 0;
+  width: 158px;
 }
 
 .news-more {
-  line-height: 26px;
   display: inline-block;
+  line-height: 26px;
   margin: 7px 0;
 
   &:after {
+    background: url(../img/link-arrow-red.png) center no-repeat;
     content: '';
     display: inline-block;
-    background: url(../img/link-arrow-red.png) center no-repeat;
-    width: 12px;
     height: 9px;
     margin: 0 10px;
     vertical-align: middle;
+    width: 12px;
   }
 }
 
 .section-column-news {
-  width: 50%;
   float: left;
+  width: 50%;
 }
